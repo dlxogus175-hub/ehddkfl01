@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+
+
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+}
+
+.header .inner {
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 img {
+    max-height: 98px;
+    height: auto;
+    width: auto;
+}
+
+.header {
+    border-bottom: 1px solid #ddd;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 40px;
+}
+
+.main_visual {
+    position: relative;
+    height: 500px;
+    background: url(../img/main_d.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.main_visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    /* ← 숫자 올리면 더 어두워짐 */
+}
+
+.main_visual .inner {
+    position: relative;
+    z-index: 1;
+}
+
+.main_visual h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.bread_menu {
+    padding: 80px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu_wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.item {
+    flex: 1;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
